@@ -253,7 +253,7 @@ ul.dropdown li {
 /* ARTICLE */
 
 #imagem {
-  background-image: url('/dist/assets/CSS/images/imagens_fundo/fundo_historia.JPG');
+  background-image: url('images/imagens_fundo/fundo_historia.JPG');
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir o contêiner */
   background-position: center; /* Posiciona a imagem no centro */
   height: 600px; /* Altura inicial da imagem de fundo */
