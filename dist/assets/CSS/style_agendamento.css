@@ -258,22 +258,8 @@ article h3{
 
 article p{
   font-family:"Roboto Condensed", sans-serif; 
-  font-size: 17px;
-  text-align: justify;
-}
-
-
-section h3{
-  text-align: center;
-  margin-top: 10px;
-  font-family: 'Oswald', sans-serif;
-}
-
-section p{
-  font-family:"Roboto Condensed", sans-serif; 
   font-size: 20px;
-  margin-top: 50px;
-  text-align: left;
+  text-align: justify;
 }
 
 /* FOOTER */
