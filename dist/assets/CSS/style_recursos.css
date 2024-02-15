@@ -408,7 +408,7 @@ main
 #mini-tela {
     display: none;
     position: fixed;
-    top: 55%;
+    top: 50%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
