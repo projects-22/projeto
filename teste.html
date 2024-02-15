@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Igreja Copta Ortodoxa</title>
+        <link rel="shortcut icon" href="dist/assets/CSS/images/logo-favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="dist/assets/CSS/style_teste.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <script src="dist/assets/scripts/contraste.js"></script>
+        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>                                         
+    </head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="dist/assets/CSS/images/logo.png" width="60" alt="logo">
+                <a class="logo" href="/">Igreja Copta Ortodoxa de Sāo Marcos no Brasil</a>
+            </div>
+            <div class="nav-list" style="margin-right: 60px;">
+                <ul>
+                    <li class="nav-item"><a href="index.html"><span style="padding-right: 10px;"><i class="bi bi-house-fill"></i></span>Igreja Copta Ortodoxa </a>
+                        <ul class="dropdown">
+                            <li><a href="historia.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>História da Igreja Copta Ortodoxa</a></li>
+                            <li><a href="concilios.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Concílios</a></li>
+                            <li><a href="festas.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Festas</a></li>
+                            <li><a href="santos.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Santos</a></li>
+                            <li><a href="tradicao.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Tradições & Ordem do Clero</a></li>
+                            <li><a href="jejum.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Jejum & Sacramentos Sagrados</a></li>    
+                       </ul>
+                    </li>
+                    <li class="nav-item"><a href="recursos.html"><span style="padding-right: 10px;"><i class="bi bi-book"></i></span> Recursos Litúrgicos & Educacionais</a></li>
+                    <li class="nav-item"><a href="perguntas.html"><span style="padding-right: 10px;"><i class="bi bi-question-circle"></i></span>Perguntas & Respostas</a></li>
+                    <li class="nav-item"><a href="eventos.html"><span style="padding-right: 10px;"><i class="bi bi-calendar-event"></i></span>Eventos</a></li>
+                    </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="dist/assets/CSS/images/menu-icon.jpg" width="40px"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html"><span style="padding-right: 10px;"><i class="bi bi-house-fill"></i></span>Igreja Copta Ortodoxa </a>
+                        <li class="nav-item"><a href="historia.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>História da Igreja Copta Ortodoxa</a></li>
+                        <li class="nav-item"><a href="concilios.html"><span style="padding-right: 6px;"><i class="bi bi-arrow-return-right"></i></span>Concílios</a></li>
+                        <li class="nav-item"><a href="festas.html"><span style="padding-right: 6px;"><i class="bi bi-arrow-return-right"></i></span>Festas</a></li>
+                        <li class="nav-item"><a href="santos.html"><span style="padding-right: 6px;"><i class="bi bi-arrow-return-right"></i></span>Santos</a></li>
+                        <li class="nav-item"><a href="tradicao.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Tradições & Ordem do Clero</a></li>
+                        <li class="nav-item"><a href="jejum.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Jejum & Sacramentos Sagrados</a></li>    
+                </li>
+                <li class="nav-item"><a href="recursos.html"><span style="padding-right: 10px;"><i class="bi bi-book"></i></span> Recursos Litúrgicos & Educacionais</a></li>
+                <li class="nav-item"><a href="perguntas.html"><span style="padding-right: 10px;"><i class="bi bi-question-circle"></i></span>Perguntas & Respostas</a></li>
+                <li class="nav-item"><a href="eventos.html"><span style="padding-right: 10px;"><i class="bi bi-calendar-event"></i></span>Eventos</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            let navItems = document.querySelectorAll('.mobile-menu .nav-item');
+    
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "dist/assets/CSS/images/menu-icon.jpg";
+                // Remover a classe 'show' dos itens do menu
+                navItems.forEach(item => {
+                    item.classList.remove('show');
+                });
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "dist/assets/CSS/images/menu-close.jpg";
+                // Adicionar a classe 'show' aos itens do menu de forma sequencial
+                navItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('show');
+                    }, index * 100); // Ajuste o atraso conforme necessário
+                });
+            }
+        }
+    </script>
+    
+
+</body>
+<!-- FEITO POR: LARISSA V. KICH  -->
+
+</html>

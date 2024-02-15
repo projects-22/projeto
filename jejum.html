@@ -17,33 +17,74 @@
 
   <body>
     <header id="topo">
-        <nav>
-          <img src="dist/assets/CSS/images/logo.png" width="60" alt="logo" style="margin-left: 5px;">
-          <a class="logo" href="/">Igreja Copta Ortodoxa de Sāo Marcos no Brasil</a>
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-            <li><a href="index.html"><span style="padding-right: 10px;"><i class="bi bi-house-fill"></i></span>Igreja Copta Ortodoxa </a>
-              <ul class="dropdown">
-                  <li><a href="historia.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>História da Igreja Copta Ortodoxa</a></li>
-                  <li><a href="concilios.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Concílios</a></li>
-                  <li><a href="festas.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Festas</a></li>
-                  <li><a href="santos.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Santos</a></li>
-                  <li><a href="tradicao.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Tradições & Ordem do Clero</a></li>
-                  <li><a href="jejum.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Jejum & Sacramentos Sagrados</a></li>    
-             </ul>
-          </li>
-            <li><a href="recursos.html"><span style="padding-right: 10px;"><i class="bi bi-book"></i></span> Recursos Litúrgicos & Educacionais</a></li>
-            <li><a href="perguntas.html"><span style="padding-right: 10px;"><i class="bi bi-question-circle"></i></span>Perguntas & Respostas</a></li>
-            <li><a href="eventos.html"><span style="padding-right: 10px;"><i class="bi bi-calendar-event"></i></span>Eventos</a></li>
-          </ul>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="dist/assets/CSS/images/logo.png" width="60" alt="logo">
+                <a class="logo" href="/">Igreja Copta Ortodoxa de Sāo Marcos no Brasil</a>
+            </div>
+            <div class="nav-list" style="margin-right: 60px;">
+                <ul>
+                    <li class="nav-item"><a href="index.html"><span style="padding-right: 10px;"><i class="bi bi-house-fill"></i></span>Igreja Copta Ortodoxa </a>
+                        <ul class="dropdown">
+                            <li><a href="historia.html" style="margin-top: 10px;"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>História da Igreja Copta Ortodoxa</a></li>
+                            <li><a href="concilios.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Concílios</a></li>
+                            <li><a href="festas.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Festas</a></li>
+                            <li><a href="santos.html"><span style="padding-right: 6px; margin-left: 20px;"><i class="bi bi-arrow-return-right"></i></span>Santos</a></li>
+                            <li><a href="tradicao.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Tradições & Ordem do Clero</a></li>
+                            <li><a href="jejum.html" style="padding-bottom: 15px;"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Jejum & Sacramentos Sagrados</a></li>    
+                       </ul>
+                    </li>
+                    <li class="nav-item"><a href="recursos.html"><span style="padding-right: 10px;"><i class="bi bi-book"></i></span> Recursos Litúrgicos & Educacionais</a></li>
+                    <li class="nav-item"><a href="perguntas.html"><span style="padding-right: 10px;"><i class="bi bi-question-circle"></i></span>Perguntas & Respostas</a></li>
+                    <li class="nav-item"><a href="eventos.html"><span style="padding-right: 10px;"><i class="bi bi-calendar-event"></i></span>Eventos</a></li>
+                    </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="dist/assets/CSS/images/menu-icon.jpg" width="40px"></button>
+            </div>
         </nav>
-        <script src="dist/assets/scripts/mobile-navbar.js"></script>
-      </header>
-      <div id="imagem">
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html"><span style="padding-right: 10px;"><i class="bi bi-house-fill"></i></span>Igreja Copta Ortodoxa </a>
+                        <li class="nav-item"><a href="historia.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>História da Igreja Copta Ortodoxa</a></li>
+                        <li class="nav-item"><a href="concilios.html"><span style="padding-right: 6px;"><i class="bi bi-arrow-return-right"></i></span>Concílios</a></li>
+                        <li class="nav-item"><a href="festas.html"><span style="padding-right: 6px;"><i class="bi bi-arrow-return-right"></i></span>Festas</a></li>
+                        <li class="nav-item"><a href="santos.html"><span style="padding-right: 6px;"><i class="bi bi-arrow-return-right"></i></span>Santos</a></li>
+                        <li class="nav-item"><a href="tradicao.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Tradições & Ordem do Clero</a></li>
+                        <li class="nav-item"><a href="jejum.html"><span style="padding-right: 5px;"><i class="bi bi-arrow-right-short"></i></span>Jejum & Sacramentos Sagrados</a></li>    
+                </li>
+                <li class="nav-item"><a href="recursos.html"><span style="padding-right: 10px;"><i class="bi bi-book"></i></span> Recursos Litúrgicos & Educacionais</a></li>
+                <li class="nav-item"><a href="perguntas.html"><span style="padding-right: 10px;"><i class="bi bi-question-circle"></i></span>Perguntas & Respostas</a></li>
+                <li class="nav-item"><a href="eventos.html"><span style="padding-right: 10px;"><i class="bi bi-calendar-event"></i></span>Eventos</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            let navItems = document.querySelectorAll('.mobile-menu .nav-item');
+    
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "dist/assets/CSS/images/menu-icon.jpg";
+                // Remover a classe 'show' dos itens do menu
+                navItems.forEach(item => {
+                    item.classList.remove('show');
+                });
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "dist/assets/CSS/images/menu-close.jpg";
+                // Adicionar a classe 'show' aos itens do menu de forma sequencial
+                navItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('show');
+                    }, index * 100); // Ajuste o atraso conforme necessário
+                });
+            }
+        }
+    </script>
+  <div id="imagem">
         <p class="primeira">Jejuns</p>
         <p>&</p>
         <p>Sacramentos</p>
