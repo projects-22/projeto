@@ -89,11 +89,50 @@
                 <div class="col-lg col-md col-sm col-xl d-flex justify-content-center align-items-center">
                     <div class="custom-menu-2">
                         <h3 style="margin-bottom: 30px;">EVENTOS EM DESTAQUE</h3>
-                        <p>10/03 - Domingo antes do Jejum da Grande Quaresma</p>
-                        <p>11/03 - Começo do Jejum da Grande Quaresma</p>
+                        <p>26/04 - Das 8:00 às 9:30 , Sacramento da Santa Unção para os enfermos - Benção do óleo.
+                            <br>
+                            Em seguida, haverá a Divina Liturgia das 9:30 às 11:00.</p>
+                            <br>
+                            Clique no arquivo para saber a programação da semana santa!  
+                            <br>
+                            <br>      
                    </div>
                 </div>    
             <div>
+
+                      <!-- Mini tela com opções de arquivos -->
+                      <div id="mini-tela" style="display: flex; justify-content: center; align-items: center;">
+                        <br>
+                    <a class="saiba-mais" onclick="window.open('dist/assets/pdf_files/programacao.pdf', '_blank')" style="cursor: pointer; align-items:center;">
+                        <img src="dist/assets/CSS/images/imagens_fundo/fundo_historia.JPG" alt="" width="220" height="300" style="border: 2px solid black;">
+                    </a>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var miniTela = document.getElementById('mini-tela');
+                    
+                    // Quando o botão "Acesse o arquivo" for clicado, exibir a mini tela
+                    document.querySelector('.btn-saiba-mais').addEventListener('click', function(event) {
+                        event.stopPropagation();
+                        miniTela.style.display = 'block';
+                    });
+            
+                    // Quando o botão "X" for clicado, fechar a mini tela
+                    document.querySelector('.fechar').addEventListener('click', function(event) {
+                        event.stopPropagation();
+                        miniTela.style.display = 'none';
+                    });
+            
+                    // Quando a pessoa clicar em qualquer lugar fora da mini tela, fechar a mini tela
+                    document.addEventListener('click', function(event) {
+                        if (event.target !== miniTela && !miniTela.contains(event.target)) {
+                            miniTela.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
+
                 <div class="col-lg col-md col-sm col-xl d-flex justify-content-center align-items-center">
                     <div class="custom-menu-2">
                         <h3 style="margin-bottom: 30px;">COMO CHEGAR</h3>
